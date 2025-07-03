@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project Elix</title>
+  <style>
+    /* Background with scattered white dots */
+    body {
+      margin: 0;
+      height: 100vh;
+      background-color: #001f4d; /* dark blue */
+      background-image:
+        radial-gradient(white 1px, transparent 1px),
+        radial-gradient(white 1px, transparent 1px);
+      background-position: 0 0, 25px 25px;
+      background-size: 50px 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Centered container with border */
+    .container {
+      text-align: center;
+      padding: 40px 60px;
+      border: 2px solid rgba(255, 255, 255, 0.25); /* 25% opacity white border */
+      border-radius: 12px;
+      color: white;
+      max-width: 350px;
+    }
+
+    .container h1 {
+      margin: 0 0 10px 0;
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    .container p {
+      margin: 0 0 30px 0;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+
+    /* Blue button with rounded corners */
+    .download-btn {
+      background-color: #007bff; /* blue */
+      border: none;
+      padding: 12px 30px;
+      border-radius: 8px;
+      color: white;
+      font-size: 1.1rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Project Elix</h1>
+    <p>Download The Project Elix Launcher</p>
+    <a href="https://elix.com" target="_blank" rel="noopener" class="download-btn">Download</a>
+  </div>
+</body>
+</html>
