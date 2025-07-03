@@ -3,70 +3,148 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Project Elix</title>
+  <title>Project Elix Inspired</title>
   <style>
-    /* Background with scattered white dots */
+    /* Reset */
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body, html {
+      height: 100%;
+      font-family: 'Arial Black', Arial, sans-serif;
+      color: white;
+    }
+    /* Background */
     body {
-      margin: 0;
+      background: url('https://cdn.mos.cms.futurecdn.net/XQdf8A7Dxkie7QqQRHSuj4-1200-80.jpg') center center/cover no-repeat fixed;
+      position: relative;
+      overflow: hidden;
+    }
+    /* Dark overlay for readability */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 0;
+    }
+    /* Container for all content */
+    .container {
+      position: relative;
+      z-index: 1;
       height: 100vh;
-      background-color: #001f4d; /* dark blue */
-      background-image:
-        radial-gradient(white 1px, transparent 1px),
-        radial-gradient(white 1px, transparent 1px);
-      background-position: 0 0, 25px 25px;
-      background-size: 50px 50px;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      font-family: Arial, sans-serif;
-    }
-
-    /* Centered container with border */
-    .container {
       text-align: center;
-      padding: 40px 60px;
-      border: 2px solid rgba(255, 255, 255, 0.25); /* 25% opacity white border */
-      border-radius: 12px;
-      color: white;
-      max-width: 350px;
+      padding: 0 20px;
     }
-
-    .container h1 {
-      margin: 0 0 10px 0;
-      font-size: 2.5rem;
-      font-weight: bold;
-    }
-
-    .container p {
-      margin: 0 0 30px 0;
-      font-size: 1.1rem;
-      font-weight: 500;
-    }
-
-    /* Blue button with rounded corners */
-    .download-btn {
-      background-color: #007bff; /* blue */
-      border: none;
-      padding: 12px 30px;
-      border-radius: 8px;
-      color: white;
-      font-size: 1.1rem;
+    /* Logo top left */
+    .logo {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      height: 50px;
+      z-index: 2;
       cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-      transition: background-color 0.3s ease;
     }
-
-    .download-btn:hover {
-      background-color: #0056b3;
+    /* Top right nav */
+    nav {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 2;
+      display: flex;
+      gap: 25px;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      cursor: pointer;
+    }
+    nav a:hover {
+      color: #8a2be2; /* purple accent color */
+    }
+    /* Headline */
+    h1 {
+      font-size: 3.5rem;
+      max-width: 900px;
+      line-height: 1.1;
+      font-weight: 900;
+      text-shadow: 0 0 10px rgba(0,0,0,0.7);
+    }
+    /* Highlight part */
+    .highlight {
+      color: #8a2be2; /* purple */
+    }
+    /* Subheadline */
+    p.sub {
+      margin: 10px 0 30px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      text-shadow: 0 0 5px rgba(0,0,0,0.6);
+    }
+    /* Buttons */
+    .buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .btn {
+      background-color: #8a2be2; /* purple */
+      border: none;
+      color: #000;
+      font-weight: 700;
+      padding: 15px 35px;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 6px;
+      text-transform: uppercase;
+      box-shadow: 0 4px 8px rgba(138, 43, 226, 0.4);
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      white-space: nowrap;
+    }
+    .btn:hover {
+      background-color: #6b1fc5; /* darker purple */
+      box-shadow: 0 6px 12px rgba(107, 31, 197, 0.7);
+      color: #fff;
     }
   </style>
 </head>
 <body>
+
+  <!-- Logo - change src to your own logo -->
+  <img src="https://imgur.com/R6UcpyG.png" alt="Logo" class="logo" />
+
+  <!-- Navigation -->
+  <nav>
+    <a href="https://discord.gg/mnvGzPWEVb" target="_blank" rel="noopener noreferrer">Register</a>
+    <a href="https://github.com/swiftogfn/projectelix/releases/download/Launcher/Project.Elix.Launcher.1.0.5.msi" target="_blank" rel="noopener noreferrer">Download</a>
+  </nav>
+
+  <!-- Main content -->
   <div class="container">
-    <h1>Project Elix</h1>
-    <p>Download The Project Elix Launcher</p>
-    <a href="https://elix.com" target="_blank" rel="noopener" class="download-btn">Download</a>
+    <p class="sub">Play Chapter 2 Season 4 Now</p>
+    <h1>Relive Chapter 2 Fortnite with <span class="highlight">ELIX</span></h1>
+    <p class="sub">Free cosmetics earned by playing, not paying.</p>
+
+    <div class="buttons">
+      <a href="https://github.com/swiftogfn/projectelix/releases/download/Launcher/Project.Elix.Launcher.1.0.5.msi" target="_blank" rel="noopener noreferrer" class="btn">Download for Free</a>
+      <a href="https://discord.gg/mnvGzPWEVb" target="_blank" rel="noopener noreferrer" class="btn" style="background-color:#555; color:#fff;">More About ELIX</a>
+    </div>
   </div>
+
 </body>
 </html>
