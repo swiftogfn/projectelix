@@ -1,5 +1,5 @@
 {
-  "name": "project-elix-website",
+  "name": "project-volcano-website",
   "version": "1.0.0",
   "scripts": {
     "start": "http-server -c-1 ."
@@ -8,3 +8,4 @@
     "http-server": "^14.1.1"
   }
 }
+
